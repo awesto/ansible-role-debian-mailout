@@ -1,7 +1,7 @@
 - name: postfix installed
   apt:
     pkg: postfix
-    state: installed
+    state: present
 
 - name: postfix configured to listen only on loopback interface
   lineinfile:
